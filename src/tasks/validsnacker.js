@@ -37,16 +37,21 @@ export default class FormVal extends Component {
   handleSnack = () => {
     if (this.state.email === "hero" && this.state.password === "hero1234") {
       this.setState({
-        email:"",
-        password : "",
+        // email:"",
+        // password : "",
         snackbar: true,
         msg: "Successfull Login-in",
         
       });
-    } else {
+    }else if(this.state.email === "" || this.state.password === ""){
       this.setState({
-        email:"",
-        password : "",
+        snackbar:true,
+        msg: "Please Fillup the Fields"
+      })
+    }else {
+      this.setState({
+        // email:"",
+        // password : "",
         snackbar: true,
         msg: "Failed to Login-in",
       });
