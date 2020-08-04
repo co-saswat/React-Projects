@@ -17,7 +17,8 @@ import * as serviceWorker from './serviceWorker';
 // import MyFile from './tasks/loginact';
 // import DelayData from './tasks/delaydata';
 // import Color from './tasks/colorchange'
-import Demo from './class8/Demo';
+// import Demo from './class8/Demo';
+import FormVal from './tasks/validsnacker';
 ReactDOM.render(
   <React.StrictMode>
     {/* <Background /> */}
@@ -25,7 +26,7 @@ ReactDOM.render(
     {/* <PostFetch /> */}
     {/* <LoginPass /> */}
     {/* <Color/> */}
-    <Demo/>
+    <FormVal/>
   </React.StrictMode>,
   document.getElementById('root')
 );
